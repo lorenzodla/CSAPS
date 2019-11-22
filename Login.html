@@ -1,119 +1,37 @@
+<!-- Lineas que hay que cambiar cuando esto esté montado:
+  - 2213 href vacio -> llevar a FAQ
+  - 2216 action del form
+  - 2229 primer text field del login
+  - 2235 segundo text field del login
+  - 2257 href vacio llevar a FAQ
+  - 2270 llevar a FAQ
+  - 2276 llevar a login de lorenzo
+  - 2279 llevar a login de lorenzo
+-->
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
 
-      <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-      <link rel="stylesheet" href="assets/css/Navegacin-APS.css">
-      <link rel="stylesheet" href="assets/css/styles.css">
+          <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+          <link rel="stylesheet" href="assets/css/Navegacin-APS.css">
+          <link rel="stylesheet" href="assets/css/styles.css">
           <!--Head iDuma------------------------------------------------------------------------->
-
           <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
           <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-          <script type="text/javascript" src="https://idp.uma.es/adas/themes/uma-1.7.0/js/jquery-1.7.1.min.js"></script>
-      <script type="text/javascript" src="https://idp.uma.es/adas/themes/uma-1.7.0/js/jquery-ui-1.8.12.custom.min.js"></script>
-      <script type="text/javascript" nonce="5b9f51b1b69b0f20b961db76394a99b1">
-          langs = ["es","en"];
-              /***********************************************************************
-               * Define tu lenguaje por defecto
-               ***********************************************************************/
-              default_lang = "es";
-              /***********************************************************************
-               * Traducciones de textos
-               ***********************************************************************/
-              textos = {
-        es: {"title_label":"iDUMA - Servicio de Identidad de la Universidad de Málaga","texto_titulo":"iDUMA - Servicio de Identidad de la Universidad de Málaga","texto_subtitulo":"Autenticación centralizada","login_ko_label":"Los datos introducidos no fueron correctos.","titulo_1col":"Identificación de usuario","titulo_3col":"otros medios de autenticación","separador":"ó","label_user":"Identificación","label_pass":"Contraseña","nota1":"Una vez que se haya autenticado no será necesario identificarse de nuevo para acceder a otros recursos.","nota2":"Para desconectarse, recomendamos que cierre su navegador (cerrando todas las ventanas).","nota3":"Al requerir un nivel de confianza específico es posible que no pueda utilizar todas las vías de autenticación.","copyright":"adAS es un producto desarrollado por PRiSE","texto_1col_multiple_id":"Seleccione su identidad","label_multiple_id":"Autenticar como","submit_ok":"Entrar","submit_ko":"Cancelar","debug_info_title":"Información de debug","received_message_text":"Se ha recibido un mensaje con las siguientes características:","received_message_title":"Mensaje recibido","to_send_message_title":"Mensaje a enviar","to_send_message_text":"Se va a enviar un mensaje con las siguientes características:","get_parameters_title":"Parametros GET","post_parameters_title":"Parametros POST","form_message_title":"Información","form_message_subtitle":"Envío de mensaje","form_message_text":"Si no se envía el mensaje automáticamente, pulse en el botón de \"ENTRAR\".","status_title":"Información","status_subtitle":"Sesión en adAS","status_text1":"La aplicación identificada como","status_text2":"ha solicitado que se cierre su sesión","status_text3":"Actualmente dispone de una sesión activa en adAS por lo que debe cerrarla antes de dejar de usar este navegador.","status_text4":"También tiene sesiones abiertas en las siguientes aplicaciones:","status_text5":"adAS es el Proveedor de Identidad de su organización donde realizará la autenticación para poder acceder a los recursos protegidos.","status_text6":"Actualmente no dispone de una sesión activa en adAS.","status_close_session":"Cerrar sesión","notlogout":"* No se podrá cerrar la sesión automáticamente en estas aplicaciones. Recomendamos que cierre el navegador antes de dejar de utilizar este ordenador.","status_close_session_text":"Cerrar sesión en todas las aplicaciones","wayf_button":"Quiero autenticarme en otra organización","remember_button":"He olvidado mi contraseña","more_info_button":"Más información","back_button":"Volver atrás","wayf_title":"¿Dónde desea autenticarse?","wayf_button_close":"Cancelar","error_title":"¡Ups! El siguiente error ocurrió en el sistema:","error_callback_title":"Error fatal en las funciones de callback","error_callback_p1":"Ocurrió el error","error_callback_p2":" en el archivo que contiene las funciones de callback: ","PROTOCOL_ERROR":"Petición del protocolo incorrecta.","METADATA_ERROR":"El recurso que busca no está dado de alta en el sistema.","POLICY_ATTRIBUTES_ERROR":"El recurso al que desea acceder no tiene una configuración correcta.","LOGOUT_ERROR":"Ha ocurrido un error al hacer LogOut de la aplicación. Por su seguridad cierre el navegador si quiere salir de todas las aplicaciones en las que se haya autenticado.","AUTHR_ERROR":"Acceso no autorizado a la aplicación solicitada","error_text1":"Póngase en contacto con los administradores de su sistema para solventar este problema.","error_text2":"Pulse aquí para obtener información técnica acerca del error","error_text3":"La siguiente información puede ser de ayuda para los administradores de su sistema:","error_text4":"Mensaje de la excepción","error_text5":"Parámetros de la excepción","error_text6":"Traza de la excepción","error_httpauth":"No hay información suficiente para validar por Autenticación HTTP","error_appletauth":"No hay información suficiente para validar por Certificado digital","sml_x509_authn_label":"Certificado digital","x509_tls_module_confirm_msg":"Para autenticarse es necesario tener un certificado digital cargado en el navegador o en una tarjeta (como DNIe) correctamente introducida en el lector apropiado.","x509_tls_module_confirm_title":"Confirmación de autenticación por certificado digital o DNIe","submit_confirm":"Aceptar","notify_info_title":"Notificaciones del sistema","notification_error":"Ocurrió un error al realizar la petición. Inténtelo de nuevo en unos instantes.","notification_consent_title":"Solicitud de consentimiento de envío de atributos","notification_consent_button_ok":"Doy mi consentimiento","notification_consent_button_ko":"No, gracias","theme_error_authr_title":"¡Atención! Acceso no autorizado a la aplicación solicitada","theme_error_authr_text":"No está autorizado para acceder a la aplicación","theme_error_authr_contact":"Póngase en contacto con el servicio de atención al usuario de su organización para solventar este problema.","ayuda_usuario":"Soy usuario pero no puedo entrar","soy_nuevo":"Soy nuevo en la UMA","clave_online":"Activar recuperación de clave online","pedir_pin":"Solicitar PIN UMA","cambiar_clave":"Quiero cambiar mi clave","aviso_clave":"Nunca atienda las solicitudes de clave que le lleguen por correo electrónico","informacion_seguridad":"Ver información importante de SEGURIDAD","es":"Español","en":"English"},
-        en: {"title_label":"iDUMA - University of Málaga Identity Service","texto_titulo":"iDUMA - University of Málaga Identity Service","texto_subtitulo":"Single Sign-On Service","login_ko_label":"Wrong user or password.","titulo_1col":"User identification","titulo_3col":"Other authentication methods","separador":"or","label_user":"Your UMA e-mail","label_pass":"Password","nota1":"Once authenticated it wouldn't be required to login again to access another resources.","nota2":"To logout we recommend you to close your browser (closing all the open windows).","nota3":"As an specific level of assurance is required, some ways of authentication might not be available.","copyright":"adAS is developed by PRiSE","texto_1col_multiple_id":"Select your identity","label_multiple_id":"Login as","submit_ok":"Authenticate","submit_ko":"Cancel","debug_info_title":"Debug information","received_message_text":"It has been received a message with the following features:","received_message_title":"Received message","to_send_message_title":"Message to send","to_send_message_text":"It will be sent a message with the following features:","get_parameters_title":"GET parameters","post_parameters_title":"POST parameters","form_message_title":"Information","form_message_subtitle":"Send Message","form_message_text":"If the message doesn't redirect automatically, push the \"Send\" button","status_title":"Information","status_subtitle":"adAS Session","status_text1":"The application identified as","status_text2":"has requested to close your session","status_text3":"Currently you have an open adAS session. You must close it before leaving this computer.","status_text4":"You also have open sessions with the following applications:","status_text5":"adAS is the Identity Provider of your organization. In this application you will authenticate to access the protected resources of your organization.","status_text6":"Currently you don't have an active adAS session.","status_close_session":"Close session","notlogout":"* It couldn't be possible to close your session automatically in this applications. In order to close them, close the browser before leaving this computer.","status_close_session_text":"Close session in all applications","wayf_button":"I'm not from this organization","remember_button":"Forgot your password?","more_info_button":"More information","back_button":"Back","wayf_title":"Where Are You From?","wayf_button_close":"Cancel","error_title":"Ups! The following error happened:","error_callback_title":"Fatal error in the callback functions","error_callback_p1":"The error:","error_callback_p2":"happened in the following callbacks file: ","PROTOCOL_ERROR":"Wrong protocol request.","METADATA_ERROR":"The requested resource is not set up in the system.","POLICY_ATTRIBUTES_ERROR":"The requested resource has a wrong configuration.","LOGOUT_ERROR":"An error happened doing Logout in the application. In order to close them, close the browser before leaving this computer.","AUTHR_ERROR":"Not authorized access to the application","error_text1":"Contact your system administrators to solve this problem.","error_text2":"Click here to get more technical information about this error","error_text3":"The following information could be helpful to your system administrators:","error_text4":"Exception message","error_text5":"Exception parameters","error_text6":"Excepción trace","error_httpauth":"There isn't enough information for doing the validation using HTTP Authentication","error_appletauth":"There isn't enough information for doing the validation using a digital certificate","sml_x509_authn_label":"Digital certificate","x509_tls_module_confirm_msg":"In order to authenticate with digital certificate you must have configured a valid certificate in your browser or to have the card properly inserted in the certificate reader. Please, click in \"Continue\" to continue.","x509_tls_module_confirm_title":"Confirm digital certificate authentication","submit_confirm":"Send","notify_info_title":"System notifications","notification_error":"An error happened doing the request. Try it again in a few moments.","notification_consent_title":"Request for consent to send the user's attributes","notification_consent_button_ok":"I give my consent","notification_consent_button_ko":"No, thanks","theme_error_authr_title":"Warning! Access to the requested application not authorized","theme_error_authr_text":"You are not authorized to access the application","theme_error_authr_contact":"Please, contact the IT service of your organization in order to solve this problem.","ayuda_usuario":"I'm a user but I cannot log in","soy_nuevo":"I'm a new UMA member","clave_online":"Activar recuperación de clave online","pedir_pin":"Solicitar PIN UMA","cambiar_clave":"I want to change my password","aviso_clave":"Please, do not EVER respond to ANY email messages requesting your password","informacion_seguridad":"Important information about SECURITY","es":"Español","en":"English"}
-
-            };
-            //Definition of translation functions
-            function translate_to(lang){
-                            var array_texts = textos[lang];
-                $.each(array_texts, function(i,e){
-                    if (i == "title_label") {
-                        document.title = e;
-                    }
-                    else {
-                        var elem = $("#"+i);
-                        var text = elem.text();
-                        if(text==""){
-                            var val = elem.val();
-                            if(val==""){
-                                var html = elem.html();
-                                if(html==""){
-                                    console.log("No pudo traducir "+i+":"+e);
-                                }else{
-                                    elem.html(e);
-                                }
-                            }else{
-                                elem.val(e);
-                                if(elem[0]!=null && elem[0]!=undefined && elem[0].className == "ui-btn-hidden"){
-                                    var span = elem.parent().children()[0];
-                                    $(span).html(e);
-                                }
-                            }
-                        }else{
-                            elem.html(e);
-                        }
-                    }
-                });
-                if(langs.length>1){
-                    $(langs).each(function(i,e){
-                        var aux = $("#"+this);
-                        if(e==lang){
-                            aux.addClass("highlight_lang");
-                        }else if(aux.hasClass("highlight_lang")){
-                            aux.removeClass("highlight_lang");
-                        }
-                    });
-                }
-            }
-            function default_translation(lang){
-                translate_to(lang);
-            }
-
-            function activate_translation(){
-                var length_langs = langs.length;
-                if(length_langs>1){
-                    var srt = "";
-                   var i=0;
-                    $(langs).each(function(){
-                            srt += "<span id="+this+">";
-                            srt += textos[this][this];
-                            srt +="</span>";
-                            if(i<length_langs-1){
-                                srt +=" | ";
-                            }
-
-                        i++;
-                    });
-                    $("#langs").append(srt);
-                    $(langs).each(function(){
-                        $("#"+this).click(function(){
-                            translate_to(this.id);
-                            if ($("#adAS_i18n_theme").length == 1) {
-                                $("#adAS_i18n_theme").val(this.id);
-                            }
-                        });
-                    });
-                }
-                default_translation(window.default_lang);
-            }
-      </script>
-
         <style type="text/css" nonce="5b9f51b1b69b0f20b961db76394a99b1">
             html, body, address, blockquote, div, dl, form, h1, h2, h3, h4, h5, h6, ol, p, pre, table, ul, dd, dt, li, tbody, td, tfoot, th, thead, tr, button,   map, a, abbr, acronym, b, bdo, big, br, cite, code, dfn, em, i, img, kbd, q, samp, small, span, strong, sub, sup, tt, var, legend, fieldset {
                 margin: 0;
                 padding: 0;
             }
+
             body {
                 background-color: #FFFFFF;
                 font: 14px arial,helvetica,verdana,sans-serif;
                 text-align: center;
                 width: 100%;
             }
-            img {
-                border: 0;
-            }
+
             #main {
                 margin-left: auto;
                 margin-right: auto;
@@ -121,6 +39,7 @@
                 text-align: left;
                 width: 893px;
             }
+
             #adas_logo{
                 margin-left: 72px;
                 margin-top: 20px;
@@ -129,230 +48,248 @@
                 /* width: 893px; */
                 z-index: 182;
             }
-          #theme_error_authr_title{
-             padding-top: 40px;
-          }
 
-              #contenedor_titulillo {
-                  float: left;
-                  margin-top: 54px;
-              }
+            #theme_error_authr_title{
+              padding-top: 40px;
+            }
 
-              #logo_img{
-                  /* height: 61px; */
-                  margin-top: 24px;
-                  float: left;
-              }
-              #debug{
-                  padding-top:40px;
-              }
-              #header {
-                  margin-bottom: 10px;
-                  margin-top: 10px;
-                  padding: 5px;
-              }
-              #blue_bar{
-                  background-color: #012359;
-                  height: 30px;
-                  width:100%;
-              }
-              #content h1 {
-                  color:  #002B5E;
-                  font: 18pt arial,helvetica,verdana,sans-serif;
-                  margin: 7px 20px 2px;
-                  padding-bottom: 2px;
-                  border-bottom: dotted 1px #003366;
-                  text-align:center;
-              }
+            #contenedor_titulillo {
+                float: left;
+                margin-top: 54px;
+            }
 
-              #content h5 {
-                  margin-bottom: 0.4em;
-                  margin-left:70px;
-                  margin-right:70px;
-                  padding-top:5px;
-                  border-top: #002B5E;
-                  color:#888;
-                  font-size:16px;
-                  text-align:center;
-              }
-              #content .bloque{
-                  margin-left:70px;
-                  margin-right:70px;
-                  margin-top:0px;
-              }
-              #content_debug{
-                  margin-top:30px;
-              }
-              #debug h2, #debug p {
-                  margin-bottom: 0.4em;
-                  line-height: 150%;
-              }
-              #debug h3 {
-                  border-top: 1px solid #E0E0E0;
-                  margin-bottom: 0.4em;
-                  margin-top: 1em;
-                  padding-top: 1em;
-              }
-              #f_blue_bar{
-                  background-color: #012359;
-                  height: 10px;
-                  width:100%;
-                  margin-top:30px;
-              }
-              a {
-                  color: #002B5E;
-                  text-decoration: none;
-              }
-              .notes_texts {
-                  display: none;
-                  margin-left: auto;
-                  margin-right: auto;
-                  margin-top: 14px;
-                  text-align: center;
-                  width: 740px;
-              }
-              .disabled_button{
-                  background: none repeat scroll 0 0 #DDDDDD;
-                  height: 62px;
-                  margin-top: -62px;
-                  opacity: 0.6;
-                  position: absolute;
-                  width: 92px;
-                  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-                  filter: alpha(opacity = 60);
-                  -moz-opacity:0.6;
-                  -khtml-opacity: 0.6;
-                  z-index: 140;
-                  cursor: default;
-              }
-              .disabled_login{
-                  background: none repeat scroll 0 0 #DDDDDD;
-                  height: 26px;
-                  margin-top: -46px;
-                  opacity: 0.6;
-                  position: absolute;
-                  width: 328px;
-                  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-                  filter: alpha(opacity = 60);
-                  -moz-opacity:0.6;
-                  -khtml-opacity: 0.6;
-                  z-index: 140;
-                  cursor: default;
-              }
-              .disabled_submit{
-                  opacity: 0.6;
-                  -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
-                  filter: alpha(opacity = 60);
-                  -moz-opacity:0.6;
-                  -khtml-opacity: 0.6;
-                  cursor: default;
-              }
-              #identificacion{
-                  width:100%;
-              }
-              #identificacion td{
-                  width:350px;
-              }
-              #par {
-                  border-right: dotted 1px #003366;
-                  padding-top: 10px;
-                  padding-right: 20px;
-                  width:350px;
-              }
-              #auten_delegadas{
-                  padding-left: 20px;
-                  padding-top: 10px;
-              }
+            #logo_img{
+                /* height: 61px; */
+                margin-top: 24px;
+                float: left;
+            }
 
-              td#auten_delegadas h2 {
-                  margin-left: 20px;
-                  text-align: left;
-              }
-              /* Para el signo de interrogacion */
-              #question1 {
-                  margin: -25px 0 0 300px;
-                  position: absolute;
-              }
-              #question_right {
-                  margin: -25px 0 0 300px;
-                  position: absolute;
-              }
+            #debug{
+                padding-top:40px;
+            }
 
-              .footer {
-                  float: right;
-                  margin-top: 14px;
-                  text-align: center;
-                  width: 420px;
-              }
-              #copyright{
-                  color: #002B5E;
-                  font-size: 9pt;
-                  margin-top: 30px;
-              }
-              h1 {
-                  color: #002B5E;
-                  font-size: 24px;
-              }
-              h2 {
-                  color: #002B5E;
-                  font-size: 15px;
-                  text-transform: uppercase;
-                  text-align: center;
-              }
-              h3 {
-                  color: #666;
-                  font-size: 13px;
-              }
-              .text-question, p {
-                  color: #555;
-                  font-size: 10pt;
-                  margin-bottom: .3em;
-              }
-              .text-field {
-                  border-radius: 7px;
-                  -moz-border-radius: 7px;
-                  -webkit-border-radius: 7px;
-                  -ms-border-radius: 7px;
-                  -khtml-border-radius: 7px;
-                  line-height: 20px;
-                  height: 20px;
-                  border: 1px solid #003366;
-                  float: right;
-                  margin-right: 36px;
-                  margin-top: -45px;
-                  width: 200px;
-              }
-              .form-item {
-                  margin-bottom: 20px;
-              }
-              .form-col1{
-                  background: #003366;
-                  background: -moz-linear-gradient(top, #003366 50%, #002B5E 100%);
-                  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#003366), color-stop(100%,#002B5E)); /* Chrome,Safari4+ */
-                  background: -webkit-linear-gradient(top,  #003366 50%,#002B5E 100%); /* Chrome10+,Safari5.1+ */
-                  background: -o-linear-gradient(top,  #003366 50%,#002B5E 100%); /* Opera 11.10+ */
-                  background: -ms-linear-gradient(top,  #003366 50%,#002B5E 100%); /* IE10+ */
-                  background: linear-gradient(top,  #003366 50%,#002B5E 100%); /* W3C */
-                  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#002B5E',GradientType=0 ); /* IE6-8 */
-                  border-radius: 7px;
-                  -moz-border-radius: 7px;
-                  -webkit-border-radius: 7px;
-                  -ms-border-radius: 7px;
-                  -khtml-border-radius: 7px;
-                  -moz-box-shadow:    3px 3px 0px 0px #ddd;
-                  -webkit-box-shadow: 3px 3px 0px 0px #ddd;
-                  box-shadow:         3px 3px 0px 0px #ddd;
-                  color:#fff;
-                  line-height: 22px;
-                  padding: 2px 2px 2px 10px;
-                  /* text-transform: uppercase; */
-                  width:90%;
-                  -webkit-text-size-adjust: 100%;
-              }
-              .form-col2{
-                  margin-right: -11px;
-                  margin-top:20px;
-              }
+            #header {
+                margin-bottom: 10px;
+                margin-top: 10px;
+                padding: 5px;
+            }
+
+            #content h1 {
+                color:  #002B5E;
+                font: 18pt arial,helvetica,verdana,sans-serif;
+                margin: 7px 20px 2px;
+                padding-bottom: 2px;
+                border-bottom: dotted 1px #003366;
+                text-align:center;
+            }
+
+            #content h5 {
+                margin-bottom: 0.4em;
+                margin-left:70px;
+                margin-right:70px;
+                padding-top:5px;
+                border-top: #002B5E;
+                color:#888;
+                font-size:16px;
+                text-align:center;
+            }
+
+            #content .bloque{
+                margin-left:70px;
+                margin-right:70px;
+                margin-top:0px;
+            }
+
+            #content_debug{
+                margin-top:30px;
+            }
+
+            #debug h2, #debug p {
+                margin-bottom: 0.4em;
+                line-height: 150%;
+            }
+
+            #debug h3 {
+                border-top: 1px solid #E0E0E0;
+                margin-bottom: 0.4em;
+                margin-top: 1em;
+                padding-top: 1em;
+            }
+
+            a {
+                color: #002B5E;
+                text-decoration: none;
+            }
+
+            .notes_texts {
+                display: none;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 14px;
+                text-align: center;
+                width: 740px;
+            }
+
+            .disabled_button{
+                background: none repeat scroll 0 0 #DDDDDD;
+                height: 62px;
+                margin-top: -62px;
+                opacity: 0.6;
+                position: absolute;
+                width: 92px;
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+                filter: alpha(opacity = 60);
+                -moz-opacity:0.6;
+                -khtml-opacity: 0.6;
+                z-index: 140;
+                cursor: default;
+            }
+
+            .disabled_login{
+                background: none repeat scroll 0 0 #DDDDDD;
+                height: 26px;
+                margin-top: -46px;
+                opacity: 0.6;
+                position: absolute;
+                width: 328px;
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+                filter: alpha(opacity = 60);
+                -moz-opacity:0.6;
+                -khtml-opacity: 0.6;
+                z-index: 140;
+                cursor: default;
+            }
+
+            .disabled_submit{
+                opacity: 0.6;
+                -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=60)";
+                filter: alpha(opacity = 60);
+                -moz-opacity:0.6;
+                -khtml-opacity: 0.6;
+                cursor: default;
+            }
+
+            #identificacion{
+                width:100%;
+            }
+
+            #identificacion td{
+                width:350px;
+            }
+
+            #par {
+                border-right: dotted 1px #003366;
+                padding-top: 10px;
+                padding-right: 20px;
+                width:350px;
+            }
+
+            #auten_delegadas{
+                padding-left: 20px;
+                padding-top: 10px;
+            }
+
+            td#auten_delegadas h2 {
+                margin-left: 20px;
+                text-align: left;
+            }
+
+            /* Para el signo de interrogacion */
+            #question1 {
+                margin: -25px 0 0 300px;
+                position: absolute;
+            }
+
+            #question_right {
+                margin: -25px 0 0 300px;
+                position: absolute;
+            }
+
+            .footer {
+                float: right;
+                margin-top: 14px;
+                text-align: center;
+                width: 420px;
+            }
+
+            #copyright{
+                color: #002B5E;
+                font-size: 9pt;
+                margin-top: 30px;
+            }
+
+            h1 {
+                color: #002B5E;
+                font-size: 24px;
+            }
+
+            h2 {
+                color: #002B5E;
+                font-size: 15px;
+                text-transform: uppercase;
+                text-align: center;
+            }
+
+            h3 {
+                color: #666;
+                font-size: 13px;
+            }
+
+            .text-question, p {
+                color: #555;
+                font-size: 10pt;
+                margin-bottom: .3em;
+            }
+
+            .text-field {
+                border-radius: 7px;
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+                -ms-border-radius: 7px;
+                -khtml-border-radius: 7px;
+                line-height: 20px;
+                height: 20px;
+                border: 1px solid #002b5e;
+                float: right;
+                margin-right: 55px;
+                margin-top: -48px;
+                width: 200px;
+            }
+
+            .form-item {
+                margin-bottom: 20px;
+            }
+
+            .form-col1{
+                background: #003366;
+                background: -moz-linear-gradient(top, #003366 50%, #002B5E 100%);
+                background: -webkit-gradient(linear, left top, left bottom, color-stop(50%,#003366), color-stop(100%,#002B5E)); /* Chrome,Safari4+ */
+                background: -webkit-linear-gradient(top,  #003366 50%,#002B5E 100%); /* Chrome10+,Safari5.1+ */
+                background: -o-linear-gradient(top,  #003366 50%,#002B5E 100%); /* Opera 11.10+ */
+                background: -ms-linear-gradient(top,  #003366 50%,#002B5E 100%); /* IE10+ */
+                background: linear-gradient(top,  #003366 50%,#002B5E 100%); /* W3C */
+                filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#002B5E',GradientType=0 ); /* IE6-8 */
+                border-radius: 7px;
+                -moz-border-radius: 7px;
+                -webkit-border-radius: 7px;
+                -ms-border-radius: 7px;
+                -khtml-border-radius: 7px;
+                -moz-box-shadow:    3px 3px 0px 0px #ddd;
+                -webkit-box-shadow: 3px 3px 0px 0px #ddd;
+                box-shadow:         3px 3px 0px 0px #ddd;
+                color:#fff;
+                line-height: 22px;
+                padding: 2px 2px 2px 10px;
+                width:90%;
+                -webkit-text-size-adjust: 100%;
+
+            }
+
+            .form-col2{
+                margin-right: -11px;
+                margin-top:20px;
+            }
+
               #edit-name-wrapper, #edit-pass-wrapper{
                   margin-top:0px;
               }
@@ -387,6 +324,7 @@
                   /* margin-top:10px; */
                   margin-top: 0px;
               }
+
               .own-button{
                   background: #003366; /* Old browsers */
                   background: -moz-linear-gradient(top, #003366 50%, #002B5E 100%);
@@ -397,17 +335,20 @@
                   background: linear-gradient(top,  #003366 50%,#002B5E 100%); /* W3C */
                   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003366', endColorstr='#002B5E',GradientType=0 ); /* IE6-8 */
               }
+
               .button-cont{
                   line-height: 22px;
                   z-index: 101;
                   text-transform: uppercase;
               }
+
               .button-icon {
                   width: 85px;
                   height: 56px;
                   position: absolute;
                   top: 0;
               }
+
               .button-text {
                   text-transform: none;
                   position: absolute;
@@ -416,6 +357,7 @@
                   line-height: 14px;
                   font-size: 12px;
               }
+
               .button-layout{
                   text-align: center;
                   /*background-image: -moz-linear-gradient(0% 65% 90deg, rgb(26, 112, 32), rgb(34, 148, 43));
@@ -444,36 +386,46 @@
                   padding-top:45px;
                   position: relative;
               }
+
               #multiple_id .form-item{
                   width:430px;
               }
+
               #multipleid_button{
                   margin-top: 30px;
                   position: absolute;
               }
+
               #edit-name-wrapper .form-col2 select{
                   margin-right:43px;
                   border: 4px solid #fff;
                   height: 24px;
               }
+
               .login-box{
                   display:block;
                   *padding-top:0px;
                   height: auto;
               }
+
               .wayf_button_cl{
                   position:relative;
               }
+
               .remember_button_cl{
                   margin-top: -10px;
                   position:relative;
               }
+
               .more_info_button_cl a{
                   font-size: 11px;
-                  color:#1A7020    }
+                  color:#1A7020
+              }
+
               #userpass {
                   margin-top:20px;
               }
+
               #userpass div{
                   margin-bottom:20px;
               }
@@ -511,12 +463,14 @@
                   text-align: center;
                   width: 281px;
               }
+
               #holder {
                   height: 150px;
                   overflow: hidden;
                   position: relative;
                   text-align: center;
               }
+
               #holder li {
                   float: left;
                   list-style: none outside none;
@@ -524,27 +478,33 @@
                   margin-left: 8%;
                   margin-right: 8%;
               }
+
               button {
                   width: 160px;
                   margin-bottom: 7px;
               }
+
               #number-links {
                   text-align: right;
                   margin-right: 16px;
                   margin-top: 4px;
                   color: #555;
               }
+
               #number-links .active {
                   color: #555;
               }
+
               .error_msg {
                   padding: 4px;
                   margin-bottom: 0em;
               }
+
               .error_subtitle{
                   margin-right:40px;
                   margin-left:40px;
               }
+
               .list-slo-sps {
                   color: #000;
                   font-size: 10pt;
@@ -552,22 +512,27 @@
                   margin-bottom: .3em;
                   padding-left: 1em;
               }
+
               .list-slo-sps li {
                   margin-bottom: .3em;
                   list-style: none;
                   text-decoration: none;
               }
+
               .sp-nologout {
                   color: #AF1111;
               }
+
               #sp-logout-request {
                   font-weight: bold;
                   border-bottom: 1px solid #E0E0E0;
               }
+
               #notlogout {
                   color: #002B5E;
                   display: none;
               }
+
               .highlight_lang{
                   color: #fff;
                   font-weight: bold;
@@ -977,7 +942,7 @@
                       width: 475px;
                   }
                   .form-col1{
-                      height: 22px;
+                      height: 24px;
                       -webkit-text-size-adjust: 100%;
                   }
 
@@ -2103,6 +2068,7 @@
                   }
                   .form-col1{
                       font-size: 11px;
+                      margin-top: 2p
                       width: 250px;
                       height: 22px;
                       -webkit-text-size-adjust: 100%;
@@ -2210,20 +2176,6 @@
               }
 
         </style>
-
-        <!-- Written by me -->
-        <style >
-          .white_bar{
-            background-color: white;
-            width: 100%;
-            height: 60px;
-            border-top:2px solid #fff;
-            border-bottom:2px solid #fff;
-            z-index:2;
-            position:relative;
-            text-align:left;
-          }
-        </style>
           <link href="https://idp.uma.es/adas/themes/uma-1.7.0/css/jquery-ui-1.8.12.custom.css" rel="stylesheet" type="text/css" media="screen">
           <title>iDUMA - Servicio de Identidad de la Universidad de Málaga</title>
   </head>
@@ -2241,9 +2193,6 @@
           </div>
       </nav>
 
-      <div id="white_space">
-      </div>
-
     <div id="main">
         <div id="content">
             <div id="adas_logo">
@@ -2251,133 +2200,111 @@
                     <img id="logo_img" src="https://idp.uma.es/adas/imgs/uma-logo-header.png">
                 </a>
             </div>
-            <!-- <div style="clear:both;"></div> -->
+
             <div id="contenedor_titulillo">
                <h1 id="texto_titulo">iDUMA - Servicio de Identidad de la Universidad de Málaga</h1>
             </div>
+
             <div style="clear:both;"></div>
+
             <div>
                 <h5 class="subtitle" id="texto_subtitulo">Autenticación centralizada</h5>
             </div>
+
             <div class="bloque">
-                                    <div>
+                  <div>
+
                     <table border="0" id="identificacion">
-                        <tbody><tr>
-                                                                <td valign="top" id="par">
+                        <tbody>
+                          <tr>
+                            <td valign="top" id="par">
                                     <h2 id="titulo_1col">Identificación de usuario</h2>
                                     <!-- Signo de interrogacion -->
-                                    <a href="https://duma.uma.es/directorio/ayuda/identificacion/">
-                                    <img id="question1" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/question-24px.png">
+
+                                    <a href="/">
+                                      <img id="question1" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/question-24px.png">
                                     </a>
-                                    <form action="https://idp.uma.es/adas/SAML2/SSOService.php?SAMLRequest=nVPRbpswFP0V5Heg0JRQK4mUJZoWqVujkvVhL9XF3DSWjM187W77%2BxkIW7tJeSgvlo99zj3nyCwIWtXxtXcn%2FYDfPZKLfrZKEx8OlsxbzQ2QJK6hReJO8Gr9%2BY7nyRXvrHFGGMVeUS4zgAitk0azaLddsqeiPB6vxbycF6K%2BvcEir8MHoiyKcj4vZ4h12cxAQFaw6BEtBeaSBaFAJ%2FK40%2BRAuwBdZbdxlsV5dsiv%2BU3B89k3Fm1DGqnBDayTcx3xNJVNl%2FgWEqQUGqC095anVXVfoX2RApPu1LFoPRndGE2%2BRXs%2B%2Ffpw90aqtrJ5xkS8TJok205h30TamsarQS8d9jSueQyCBrTBI3jlYgoD9%2BcuP0jdSP18ucZ6vET80%2BGwj%2Ff31YGtFr02H2qxq%2Fc7bNGFWhz8Y3CRvpZfjK%2FmSzC22%2B6NkuJX9NHYFtxl3z0im%2Fg4XOXOgiaJ2oW6lTI%2FNhbB4ZI565Gl05BKmC5knbbnR4p2t%2F2bUo%2BKUsD7cvbg0wbaztOjtM6DGvO%2BHTdhfxyl%2F%2F88q98%3D&amp;SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&amp;Signature=YYnle4arKB2UOqlpxWJrqI3YBZ6HhKu8ZTUdJaRRpeHMT0Nl7HOCDItqU2hoB8MZ%2Bht00jmuhMHAYn5pgF8vgo4ZMssLJrzyrGgUDYKsX3jlh9C3E1%2FyhCU3IYy9vAsPzEOFUhNiOiNvggnzxJ%2FAhEFENTspCfKghxnFuz6XkqfTD1Bu5jSd4lKAo2%2Fzft2xz91AjbEw8LkQM8YqfzxjEQShxSSVXGnl0v6wB9%2B6BcirjlL9i5pfRsBy2tdWsDI9Ldyy9iLcVbrzjCD1eVawjJG%2FH%2Fnf74OtBAaIEq2rUBYLYlWrAReovjfAd4s7eLdbSLz1X%2BKdIFjNFeCCBfA4uw%3D%3D" method="post" name="formulario1" id="formulario1">
-                                                                                    <input type="hidden" id="adAS_i18n_theme" name="adAS_i18n_theme" value="es">
-                                        <input type="hidden" name="adAS_mode" value="authn">
+
+                                    <form action="" method="post" name="formulario1" id="formulario1">
                                         <div id="userpass" style="position:relative;">
                                             <div class="form-item" id="edit-name-wrapper">
-                                                <div class="form-col1 text-question"><label id="label_user" for="edit-name">Identificación</label></div>
-                                                <div class="form-col2"><input class="text-field" type="text" maxlength="60" name="adAS_username" id="edit-name" size="50" value="" tabindex="1"></div>
-                                                                                                </div>
+                                                <div class="form-col1">
+                                                  <label>Identificación</label>
+                                                </div>
+
+                                                <div class="form-col2">
+                                                  <input class="text-field" type="text"  name="" id="edit-name">
+                                                </div>
+
+                                              </div>
+
                                             <div class="form-item" id="edit-pass-wrapper">
-                                                                                                    <div class="form-col1 text-question"><label id="label_pass" for="edit-pass">Contraseña</label></div>
-                                                <div class="form-col2"><input class="text-field" type="password" name="adAS_password" id="edit-pass" maxlength="128" size="50" tabindex="2" value=""></div>
-                                                                                                </div>
+                                                <div class="form-col1 text-question">
+                                                  <label>Contraseña</label>
+                                                </div>
+
+                                                <div class="form-col2">
+                                                  <input class="text-field" type="password" name="" id="edit-pass">
+                                                </div>
+                                            </div>
+
                                             <div class="login-box">
                                                 <input id="submit_ok" class="gradient " type="submit" value="Entrar" name="adAS_submit">&nbsp;
                                             </div>
-                                                                                                <!--
-                                                <div class="wayf_button_cl">
-                                                    <a id="wayf_button" href="#">Quiero autenticarme en otra organización</a>
-                                                </div>
-                                                -->
-                                                                                                                                        </div>
+
+                                        </div>
                                     </form>
 
                                     <div id="enlaces_UMA">
                                         <ul>
                                             <li>
                                                 <img id="icon_nopuedoentrar" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/nopuedoentrar.png">
-                                                <a id="ayuda_usuario" href="https://duma.uma.es/acceso/">Soy usuario pero no puedo entrar</a>
+                                                <a id="ayuda_usuario" href="">Soy usuario pero no puedo entrar</a>
                                             </li>
-                                            <!--
-                                            <li>
-                                                <img id="icon_nuevoenuma" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/nuevoenuma.png" >
-                                                <a id="soy_nuevo" href="https://duma.uma.es/registro/">
-                                                    Soy nuevo en la UMA                                                    </a>
-                                            </li>
-                                            <li>
-                                                <a id="clave_online" href="https://duma.uma.es/">
-                                                    Activar recuperación de clave online                                                    </a>
-                                            </li>
-                                            -->
-                                            <li>
-                                                <img id="icon_pinuma" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/pin.png">
-                                                <a id="pedir_pin" href="https://pinuma.uma.es/">Solicitar PIN UMA</a>
-                                            </li>
+
                                         </ul>
                                     </div>
 
-                                    <div id="panelhttp" style="display: none;">
-                                        <div style="display: none">
-                                            <form action="https://idp.uma.es/adas/SAML2/SSOService.php?SAMLRequest=nVPRbpswFP0V5Heg0JRQK4mUJZoWqVujkvVhL9XF3DSWjM187W77%2BxkIW7tJeSgvlo99zj3nyCwIWtXxtXcn%2FYDfPZKLfrZKEx8OlsxbzQ2QJK6hReJO8Gr9%2BY7nyRXvrHFGGMVeUS4zgAitk0azaLddsqeiPB6vxbycF6K%2BvcEir8MHoiyKcj4vZ4h12cxAQFaw6BEtBeaSBaFAJ%2FK40%2BRAuwBdZbdxlsV5dsiv%2BU3B89k3Fm1DGqnBDayTcx3xNJVNl%2FgWEqQUGqC095anVXVfoX2RApPu1LFoPRndGE2%2BRXs%2B%2Ffpw90aqtrJ5xkS8TJok205h30TamsarQS8d9jSueQyCBrTBI3jlYgoD9%2BcuP0jdSP18ucZ6vET80%2BGwj%2Ff31YGtFr02H2qxq%2Fc7bNGFWhz8Y3CRvpZfjK%2FmSzC22%2B6NkuJX9NHYFtxl3z0im%2Fg4XOXOgiaJ2oW6lTI%2FNhbB4ZI565Gl05BKmC5knbbnR4p2t%2F2bUo%2BKUsD7cvbg0wbaztOjtM6DGvO%2BHTdhfxyl%2F%2F88q98%3D&amp;SigAlg=http%3A%2F%2Fwww.w3.org%2F2000%2F09%2Fxmldsig%23rsa-sha1&amp;Signature=YYnle4arKB2UOqlpxWJrqI3YBZ6HhKu8ZTUdJaRRpeHMT0Nl7HOCDItqU2hoB8MZ%2Bht00jmuhMHAYn5pgF8vgo4ZMssLJrzyrGgUDYKsX3jlh9C3E1%2FyhCU3IYy9vAsPzEOFUhNiOiNvggnzxJ%2FAhEFENTspCfKghxnFuz6XkqfTD1Bu5jSd4lKAo2%2Fzft2xz91AjbEw8LkQM8YqfzxjEQShxSSVXGnl0v6wB9%2B6BcirjlL9i5pfRsBy2tdWsDI9Ldyy9iLcVbrzjCD1eVawjJG%2FH%2Fnf74OtBAaIEq2rUBYLYlWrAReovjfAd4s7eLdbSLz1X%2BKdIFjNFeCCBfA4uw%3D%3D" method="post" name="AuthNForm" id="AuthNForm">
-                                                <input type="hidden" name="adAS_mode" value="authn">
-                                                                                                    <input type="submit" class="gradient" value="Aceptar" name="adAS_submit">
-                                            </form>
-                                        </div>
-                                        <div id="externalauth" style="margin-top: 1em;">&nbsp;</div>
-                                        <p><a class="return_to_userpassword" href="">Volver atrás</a></p>
-                                    </div>
                                 </td>
+
                                 <td valign="top" id="auten_delegadas">
                                     <h2 id="titulo_3col">otros medios de autenticación</h2>
                                     <!-- Signo de interrogacion -->
                                     <a href="https://duma.uma.es/directorio/ayuda/otros-identificacion/">
-                                    <img id="question_right" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/question-24px.png">
+                                      <img id="question_right" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/question-24px.png">
                                     </a>
-                                    <div id="otherlogin">
-                                        <ul id="holder">
-                                                                                                <li>
-                                                    <a id="x509_module" class="own-button x509_module" href="https://idp.uma.es/adas/authn/tls/http-tls.php?adAS_request_id=86709a10-0cba-11ea-803e-7b2272657175">
-                                                        <div class="button-cont gradient button-layout">
-                                                            <div class="button-icon" style="background: url(https://idp.uma.es/adas/imgs/icon-x509_module.png) no-repeat top;">&nbsp;</div>
-                                                            <div class="button-text mod_name_x509_module" id="sml_x509_authn_label">Certificado digital</div>
-                                                        </div>
-                                                                                                                </a>
-
-                                                </li>
-                                                                                            </ul>
-                                    </div>
 
                                     <div id="enlaces_wayf">
                                         <ul>
-                                                                                                <li>
-                                                    <img id="icon_otraorganizacion" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/otraorganizacion.png">
-                                                    <a id="wayf_button" href="#">Quiero autenticarme en otra organización</a>
-                                                </li>
-                                                                                        </ul>
+                                          <li>
+                                            <img id="icon_otraorganizacion" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/otraorganizacion.png">
+                                              <a id="wayf_button" href="">Quiero autenticarme como organización</a>
+                                          </li>
+                                        </ul>
                                     </div>
 
-
-
-
-
-                                    <div id="number-links"></div>
                                 </td>
-                                                            </tr>
-                    </tbody></table>
-                </div>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                  </div>
             </div>
+
             <div class="notes_texts" style="display: block;">
-                                    <p id="nota1">Una vez que se haya autenticado no será necesario identificarse de nuevo para acceder a otros recursos.</p>
+                <p id="nota1">Una vez que se haya autenticado no será necesario identificarse de nuevo para acceder a otros recursos.</p>
                 <p><strong><span id="nota2">Para desconectarse, recomendamos que cierre su navegador (cerrando todas las ventanas).</span></strong></p>
             </div>
+
         </div>
-        <!-- <div id="content_middle"></div> -->
+
         <div id="content_bottom">
             <div class="footer">
                 <!-- <a href="http://www.prise.es"><div id="copyright">adAS es un producto desarrollado por PRiSE</div></a> -->
                 <img id="icon_seguridad" src="https://idp.uma.es/adas/themes/uma-1.7.0/img/seguridad.png">
                 <a href="https://duma.uma.es/seguridad/"><div id="informacion_seguridad">Ver información importante de SEGURIDAD</div></a>
             </div>
+
         </div>
     </div>
   </body>
