@@ -2307,6 +2307,36 @@
 
         </div>
     </div>
+
+    <?php
+      require('dbInfo.php');
+      $conexion=mysqli_connect('localhost','PedroArenas','77433084l','PHP_Course')
+        or die("No se pudo conectar");
+
+      $query = "SELECT * from Productos";
+
+      $resultados = mysqli_query($conexion,$query);
+      echo "<table>
+              <tr>
+               <th>SECCIÓN</th>
+               <th>NOMBRE ARTÍCULO</th>
+               <th>FECHA</th>
+               <th>PAÍS DE ORIGEN</th>
+               <th>PRECIO</th>
+              </tr> \n";
+      while($row = mysqli_fetch_array($resultados, MYSQLI_ASSOC)){
+
+        echo   "<tr>\n";
+        echo      "<td>".$row['SECCIÓN']."</td>\n";
+        echo      "<td>".$row['NOMBRE ARTÍCULO']."</td>\n";
+        echo      "<td>".$row['FECHA']."</td>\n";
+        echo      "<td>".$row['PAÍS DE ORIGEN']."</td>\n";
+        echo      "<td>".$row['PRECIO']."</td>\n";
+        echo   "</tr>";
+      }
+      echo "</table>"
+
+    ?>
   </body>
 
 </html>
