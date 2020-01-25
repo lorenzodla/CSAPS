@@ -1,0 +1,10 @@
+[24-Jan-2020 00:36:45 UTC] PHP Fatal error:  Uncaught exception 'mysqli_sql_exception' with message 'Unknown column 'likes' in 'field list'' in /home/alphaduck/public_html/csaps/visualizar_organizaciones.php:20
+Stack trace:
+#0 /home/alphaduck/public_html/csaps/visualizar_organizaciones.php(20): mysqli_query(Object(mysqli), 'SELECT round(su...')
+#1 /home/alphaduck/public_html/csaps/visualizar_organizaciones.php(53): getValoracion('accionsocial@on...')
+#2 /home/alphaduck/public_html/csaps/visualizar_organizaciones.php(129): show_ONG(Array)
+#3 {main}
+  thrown in /home/alphaduck/public_html/csaps/visualizar_organizaciones.php on line 20
+[24-Jan-2020 01:10:01 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/alphaduck/public_html/csaps/functions/show_completed.php on line 61
+[24-Jan-2020 01:10:04 UTC] PHP Parse error:  syntax error, unexpected '*' in /home/alphaduck/public_html/csaps/functions/show_completed.php on line 61
+[24-Jan-2020 01:36:53 UTC] PHP Parse error:  syntax error, unexpected 'class' (T_CLASS), expecting ',' or ';' in /home/alphaduck/public_html/csaps/functions/show_completed.php on line 53

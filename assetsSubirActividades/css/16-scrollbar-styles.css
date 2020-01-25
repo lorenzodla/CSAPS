@@ -1,0 +1,18 @@
+.sc-overflow {
+  overflow-y: auto;
+}
+
+section {
+  min-height: 100px;
+}
+
+.container {
+  max-height: 200px;
+}
+
+article {
+  height: 350px;
+  background: #f4f4f4;
+  padding: 10px;
+}
+
